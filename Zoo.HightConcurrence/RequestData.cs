@@ -1,4 +1,4 @@
-﻿namespace Zoo.HightConcurrence
+﻿namespace HighConcurrence.App
 {
     public class RequestData
     {
