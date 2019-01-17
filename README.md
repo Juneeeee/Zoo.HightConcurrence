@@ -4,10 +4,10 @@
 
 #### 基本思路
 利用redis的set集合创建一个```QueueManager```的缓存，存储业务中的唯一键，处理完成业务后移除键值。
-set集合设置上限，当超过上限时不在处理当前请求的业务
+set集合设置上限，当超过上限时不在处理当前请求
 
 ```
-private int limit = 10;
+        private int limit = 10;
         public void Process()
         {
             var data = new RequestData() { No = Guid.NewGuid().ToString() };
